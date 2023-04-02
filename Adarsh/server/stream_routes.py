@@ -35,6 +35,7 @@ async def root_route_handler(_):
                 )
             ),
             "version": __version__,
+            "owner": "jeol",
         }
     )
 
