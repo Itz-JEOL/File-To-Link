@@ -1,6 +1,6 @@
 {
-  "name": "Adarsh-",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
+  "name": "FILE-TO-LINK",
+  "description": "A Pyrogram Telegram bot to Stream Telegram files to web.",
   "keywords": [
       "telegram",
       "stream",
@@ -13,10 +13,10 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/adarsh-goel/-pro/",
+  "repository": "https://github.com/Itz-JEOL/File-To-Link/",
   "success_url": "/",
-  "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://adarsh.eu.org",
+  "logo": "https://graph.org/file/3421895411af26c3da183.jpg",
+  "website": "http://jeol.tech",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
@@ -78,11 +78,6 @@
       "HAS_SSL": {
           "description": "Default value is True",
           "value": "True",
-          "required": false
-      },
-       "MY_PASS": {
-          "description": "Leave empty if dont need password else enter Your Password",
-          "value": "None",
           "required": false
       },
       "BIND_ADRESS": {
