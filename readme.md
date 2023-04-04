@@ -30,10 +30,9 @@
   <summary><b>Deploy on Heroku:</b></summary>
 
 
-1. Fork This Repo
-2. Click on the button to Deploy and follow steps
+<a href="https://youtu.be/lBJZdaA04Ig"><img src="https://img.shields.io/badge/Watch%20Tutorial%20On%20YouTube-red.svg?logo=Youtube"></a>                     
 
-<h4> So Follow Above Steps 👆 and then deploy other wise bot won't work</h4>
+<h4> So Follow Above Video 👆 and then deploy other wise bot won't work</h4>
 
 Press the below button to Fast deploy on Heroku/Raiwlay
 Either you could locally host or deploy on [Heroku](https://heroku.com)
