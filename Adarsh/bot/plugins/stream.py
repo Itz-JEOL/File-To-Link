@@ -30,39 +30,6 @@ async def private_receive_handler(c: Client, m: Message):
             Var.BIN_CHANNEL,
             f"New User Joined! : \n\n Name : [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Started Your Bot!!"
         )
-    if Var.UPDATES_CHANNEL != "None":
-        try:
-            user = await c.get_chat_member(Var.UPDATES_CHANNEL, m.chat.id)
-            if user.status == "kicked":
-                await c.send_message(
-                    chat_id=m.chat.id,
-                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ [Adarsh Goel](https://github.com/adarsh-goel) ʜᴇ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
-                    
-                    disable_web_page_preview=True
-                )
-                return 
-        except UserNotParticipant:
-            await c.send_message(
-                chat_id=m.chat.id,
-                text="""<i>𝙹𝙾𝙸𝙽 UPDATES CHANNEL 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴 🔐</i>""",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
-                        ]
-                    ]
-                ),
-                
-            )
-            return
-        except Exception as e:
-            await m.reply_text(e)
-            await c.send_message(
-                chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** [Adarsh Goel](https://github.com/adarsh-goel)",
-                
-                disable_web_page_preview=True)
-            return
     try:
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
