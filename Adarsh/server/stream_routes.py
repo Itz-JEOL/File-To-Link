@@ -64,6 +64,7 @@ async def root_route_handler(_):
 </body>
 </html>""",
         }
+        content_type='text/html'
     )
 
 
