@@ -27,16 +27,7 @@ async def root_route_handler(_):
             "<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="monetag" content="da090c6862f847c372fbff75a3eb38b0">
     <title>About Jeol</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 <body>
     <div id="particles"></div>
@@ -64,23 +55,8 @@ async def root_route_handler(_):
             </ul>
         </div>
     </section>
-    <section class="about" id="about">
-        <div class="container">
-            <h2>Hi, I am Jeol ❤️</h2>
-            <h3>Nothing to be specifically noted about me.</h3>
-            <p>I have a passion for wasting time. <br> I believe that with excessive behavioral traits of assholism I will be able to achieve those.</p>
-            <br><br>
-            <h2>Offline With Studies😒</h2>
-            <p>Apart from all that what I love the most is to spend time in TG & other Bot making 🔭 </p>
-            <br>
-            <p class"astrophile-meaning"><small>*astrophile- a person who is deeply in love with Telegram.</small></p>
-        </div>
-    </section>
 
-    <footer>
-        <p><small>&copy; 2022 kanged from - sycinue-rdc <i class="fab fa-github"></i> . All Rights Reserved.</small></p>
-    </footer>
-
+            
     <!-- JavaScript -->
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/part-conf.js"></script>
