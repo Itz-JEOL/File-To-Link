@@ -8,6 +8,7 @@ import logging
 import secrets
 import mimetypes
 from aiohttp import web
+import aiofiles
 from aiohttp.http_exceptions import BadStatusLine
 from Adarsh.bot import multi_clients, work_loads, StreamBot
 from Adarsh.server.exceptions import FIleNotFound, InvalidHash
