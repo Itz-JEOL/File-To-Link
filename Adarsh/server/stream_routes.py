@@ -24,7 +24,7 @@ routes = web.RouteTableDef()
 async def root_route_handler(_):
     return web.json_response(
         {
-            "WORKING",
+            "server_status": "running",
         }
     )
 
