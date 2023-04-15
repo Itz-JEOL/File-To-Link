@@ -24,47 +24,8 @@ routes = web.RouteTableDef()
 async def root_route_handler(_):
     return web.json_response(
         {
-            """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>About Jeol</title>
-</head>
-<body>
-    <div id="particles"></div>
-
-    <header>
-        <div class="container">
-            <ul class="header-logo">
-                <li><a href=""><h1>Jeol</h1><img src="favicon.ico" alt="logo"></a></li>
-            </ul>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <img src="assets/img/profile.jpg" alt="jeols logo" class="prof-img">
-            <h1>𝗝𝗘𝗢𝗟</h1>
-            <ul class="hero-links">
-                <li><a target="_blank" href="https://instagram.com/_je_ol_"><i class="fab fa-instagram"></i></a></li>
-                <li><a target="_blank" href="https://telegram.dog/jeol_TG"><i class="fab fa-telegram"></i></a></li>
-            </ul>
-        </div>
-    </section>
-
-            
-    <!-- JavaScript -->
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/part-conf.js"></script>
-    <script src="assets/js/writer.js"></script>
-</body>
-</html>""",
+            "WORKING",
         }
-        content_type='text/html'
     )
 
 
